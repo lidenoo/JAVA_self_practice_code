@@ -48,9 +48,12 @@ public class test4 extends JFrame{
                 
                 getContentPane().setBackground(new Color(0,color1,0));
                 color1=color1-10;
+                if(color1<0){
+                    color1 = 1;
+                }
             }
         });
-    }
+    } 
 
 
 
