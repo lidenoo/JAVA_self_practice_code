@@ -18,9 +18,9 @@ public class test5 extends JFrame {
         panel1.setPreferredSize(new Dimension(100,100));
 
 
-        this.add(panel1,BorderLayout.NORTH);
+        this.add(panel1,BorderLayout.SOUTH);
 
-
+        //
     }
 
 
