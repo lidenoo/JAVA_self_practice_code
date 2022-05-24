@@ -6,13 +6,18 @@ import java.util.regex.Pattern;
 public class test4 extends JFrame{
     
     private Container cp;
-    int color1 = 1;
+    public int color1 = 1;
+
+    JButton jbtn;
+    JButton jbtn2;
+
   public test4(){
         
-        JButton jbtn = new JButton("+");
-        JButton jbtn2 = new JButton("-");
-        
-  
+        jbtn = new JButton("+");
+        jbtn2 = new JButton("-");
+        jbtn.addActionListener(e -> getContentPane().setBackground(new Color(0,this.color1,0)));
+        jbtn.addActionListener(e -> this.color1=this.color1+10 );
+       
         cp = this.getContentPane();
         cp.setLayout(null);
         
@@ -28,16 +33,7 @@ public class test4 extends JFrame{
 
         jbtn.setBounds(90, 100, 120, 25);
         this.add(jbtn);
-        jbtn.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent aa){
-                
-                getContentPane().setBackground(new Color(0,color1,0));
-                color1=color1+10;
-                if(color1 >255){
-                    color1 = 1;
-                }
-            }
-        });
+
 
 
 
@@ -55,7 +51,22 @@ public class test4 extends JFrame{
         });
     } 
 
+   /* public void actionPerformed(ActionEvent e){
 
+        if(e.getSource()== jbtn){
+            
+            getContentPane().setBackground(new Color(0,color1,0));
+            color1=color1+10;
+        
+
+
+        }
+
+
+
+
+
+    }*/
 
 
 
