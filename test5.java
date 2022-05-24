@@ -23,7 +23,7 @@ public class test5 extends JFrame {
         this.add(panel1,BorderLayout.WEST);
         this.add(panel2,BorderLayout.NORTH);
 
-        //
+        ///////---///--
     }
 
 
