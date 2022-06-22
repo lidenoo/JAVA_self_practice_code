@@ -51,8 +51,13 @@ public class test4 extends JFrame{
         });
     } 
 
-   /* public void actionPerformed(ActionEvent e){
+  
+    //--------------------------------------------------------------//
+    /*  public void actionPerformed(ActionEvent e){
 
+
+   
+      
         if(e.getSource()== jbtn){
             
             getContentPane().setBackground(new Color(0,color1,0));

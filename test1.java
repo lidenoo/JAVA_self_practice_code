@@ -41,9 +41,12 @@ public class test1 extends MainFrame{
 
         init_panelStart();//從MainFrame創造容器
 
+        //------把數值帶入mainFrame裡面-----
         this.labelPara(jlb, 90, 50, 120, 25);
         this.textPara(jfld, 220, 50, 120, 25);
         this.buttonPara(jbtn,90,100,120,25);
+        this.buttonPara(jbtn2,220,100,120,25);
+        //----按鈕1----
         jbtn.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent aa){
                 String a = jfld.getText();
@@ -53,7 +56,7 @@ public class test1 extends MainFrame{
             }
         });
 
-        this.buttonPara(jbtn2,220,100,120,25);
+        //----按鈕2----
         jbtn2.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent aa){
                 swh = true;
@@ -72,7 +75,7 @@ public class test1 extends MainFrame{
     }
 
     private void id_generate(String locate, String gender){
-        //依據lacate及gender決定開頭的數字，未完成
+    //依據lacate及gender決定開頭的數字，未完成
 
         
         String tempId;
